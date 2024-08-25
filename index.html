@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi encriptador</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="encriptador">
+        <div class="caja1">
+            <img id="simbolo" src="https://endlessicons.com/wp-content/uploads/2013/11/html-tag-icon.png" alt="Simbolo de una etiqueta HTML">
+            <textarea id="texto" type="text" name="caja" cols="41" rows="15" spellcheck="false" placeholder="Ingrese su texto aqui">Lorem ipsum dolor sit amet consectetur adipiscing elit Orci montes sit et diam risus scelerisque vitae est Tortor maecenas nunc ut laoreet Eget diam mauris quam quisque ut eget fringilla sit elit Libero sodales duis fames id diam feugiat aliquet non egestas</textarea>
+            <div class="caja_sugerencia">
+                <img id="exclamacion" src="assets/exclamacion.png" alt="Simbolo de exclamacion">
+                <p id="sugerencia1">Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="botones_estilo" id="btnEncriptar">Encriptar</button>
+                <button class="botones_estilo" id="btnDesencriptar" disabled>Desencriptar</button>
+            </div>
+        </div>
+        <div class="caja2" id="caja2">
+            <img id="seguridad" src="https://cdn-icons-png.flaticon.com/512/2494/2494628.png" alt="Dibujo de una pantalla con un simbolo de seguridad">
+            <div class="out" id="out">
+                <textarea class="cuadro1" id="output" spellcheck="false">Ningun mensaje fue encontrado</textarea>
+                <p id="sugerencia2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="oculto" id="btnCopiar">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<!--
+    codigo realizado por Nicolas Agudelo Martinez
+    Alura Latam - ONE Edicion 7 
+-->
+</html>
